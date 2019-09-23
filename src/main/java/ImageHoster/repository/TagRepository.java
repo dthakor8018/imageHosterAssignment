@@ -1,17 +1,12 @@
 package ImageHoster.repository;
 
 import ImageHoster.model.Tag;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.NoResultException;
-import javax.persistence.PersistenceUnit;
-import javax.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.*;
 
 @Repository
 public class TagRepository {
-
   @PersistenceUnit(unitName = "imageHoster")
   private EntityManagerFactory emf;
 

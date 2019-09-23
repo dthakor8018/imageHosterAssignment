@@ -1,19 +1,14 @@
 package ImageHoster.repository;
 
 import ImageHoster.model.User;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.NoResultException;
-import javax.persistence.PersistenceUnit;
-import javax.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.*;
 
 // The annotation is a special type of @Component annotation which describes that the class defines
 // a data repository
 @Repository
 public class UserRepository {
-
   // Get an instance of EntityManagerFactory from persistence unit with name as 'imageHoster'
   @PersistenceUnit(unitName = "imageHoster")
   private EntityManagerFactory emf;

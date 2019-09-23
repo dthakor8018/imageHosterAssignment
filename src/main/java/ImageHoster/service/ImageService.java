@@ -2,9 +2,10 @@ package ImageHoster.service;
 
 import ImageHoster.model.Image;
 import ImageHoster.repository.ImageRepository;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ImageService {
